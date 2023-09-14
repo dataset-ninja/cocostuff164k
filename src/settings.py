@@ -14,7 +14,7 @@ from dataset_tools.templates import (
 # * Before uploading to instance #
 ##################################
 PROJECT_NAME: str = "COCO-Stuff 164k"
-PROJECT_NAME_FULL: str = None
+PROJECT_NAME_FULL: str = "COCO-Stuff 164k"
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
@@ -41,7 +41,7 @@ if RELEASE_DATE is None:
 HOMEPAGE_URL: str = "https://github.com/nightrome/cocostuff"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = 3389381
+PREVIEW_IMAGE_ID: int = 3839146
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
 GITHUB_URL: str = "https://github.com/dataset-ninja/cocostuff164k"
@@ -65,7 +65,10 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = None
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
-PAPER: Optional[Union[str, List[str]]] = "https://arxiv.org/abs/1612.03716"
+PAPER: Optional[Union[str, List[str]]] = [
+    "https://arxiv.org/abs/1612.03716",
+    "https://arxiv.org/abs/1405.0312",
+]
 BLOGPOST: Optional[Union[str, List[str]]] = None
 
 CITATION_URL: Optional[str] = "https://arxiv.org/abs/1612.03716"
