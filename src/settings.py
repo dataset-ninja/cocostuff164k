@@ -86,7 +86,7 @@ ORGANIZATION_URL: Optional[Union[str, List[str]]] = [
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with value:str to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
-    "__PRETEXT__": "Additionally, an hierarchy of the objects is contained within the ***category*** tag. Explore it in supervisely"
+    "__PRETEXT__": "Additionally, an hierarchy of the objects is contained within the ***category*** tag. Explore it in supervisely labeling tool"
 }
 TAGS: Optional[List[str]] = None
 
