@@ -73,6 +73,7 @@ BLOGPOST: Optional[Union[str, List[str]]] = None
 
 CITATION_URL: Optional[str] = "https://arxiv.org/abs/1612.03716"
 AUTHORS: Optional[List[str]] = ["Holger Caesar", "Jasper Uijlings", "Vittorio Ferrari"]
+AUTHORS_CONTACTS: Optional[List[str]] = ["https://sites.google.com/it-caesar.de/homepage/", "h.caesar@tudelft.nl", "http://homepages.inf.ed.ac.uk/juijling", "http://calvin.inf.ed.ac.uk/members/vittoferrari"]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = [
     "University of Edinburgh, UK",
@@ -86,7 +87,7 @@ ORGANIZATION_URL: Optional[Union[str, List[str]]] = [
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with value:str to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
-    "__PRETEXT__": "Additionally, an hierarchy of the objects is contained within the ***category*** tag. Explore it in supervisely labeling tool"
+    "__PRETEXT__": "Every image has a textual description in ***caption*** tag. Additionally, a hierarchy of the objects is contained within the ***category*** tag. Explore it in supervisely labeling tool"
 }
 TAGS: Optional[List[str]] = None
 
@@ -134,6 +135,7 @@ def get_settings():
     settings["blog"] = BLOGPOST
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
+    settings["authors_contacts"] = AUTHORS_CONTACTS
     settings["organization_name"] = ORGANIZATION_NAME
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT
